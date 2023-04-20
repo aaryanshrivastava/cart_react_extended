@@ -3,6 +3,22 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+// import * as firebase from "firebase";
+import firebase from "firebase/compat/app";
+import "firebase/compat/firestore";
+// import "firebase/firestore";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCP3oQBppyjWi6atjx32pF-2365lAzuHWg",
+  authDomain: "cart-d1dc4.firebaseapp.com",
+  projectId: "cart-d1dc4",
+  storageBucket: "cart-d1dc4.appspot.com",
+  messagingSenderId: "831936287808",
+  appId: "1:831936287808:web:2efab279bbf8d184cdfba5",
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
